@@ -1,0 +1,12 @@
+{
+  "name": "gridboard",
+  "version": "0.1.0",
+  "description": "A dispatch console for a regional grid operator that degrades visibly under load instead of silently showing stale data.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.6" },
+  "scripts": {
+    "test": "node --test",
+    "demo": "node src/demo.ts"
+  }
+}
