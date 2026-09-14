@@ -2,6 +2,22 @@
 
 > A dispatch console for a regional grid operator that degrades visibly under load instead of silently showing stale data.
 
+## Live deployment
+
+[![CI and deployment](https://github.com/SlateGitOrg/gridboard/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/SlateGitOrg/gridboard/actions/workflows/ci.yml)
+
+[Open the interactive Gridboard demo](https://slategitorg.github.io/gridboard/)
+
+The deployed interface uses a deterministic offline scenario to make the repository's tested decision rule visible without external services or private data.
+
+### Desktop
+
+![Gridboard desktop deployment](docs/assets/deployed-desktop.png)
+
+### Mobile
+
+<img src="docs/assets/deployed-mobile.png" alt="Gridboard mobile deployment" width="390">
+
 `FLAGSHIP` · **Full Stack Engineering** · Expert · ~5-6 weeks · Energy / utilities
 
 **Primary language:** TypeScript
