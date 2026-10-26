@@ -3,7 +3,7 @@ import type { Sample } from './protocol.ts';
 /**
  * Backpressure-aware buffer.
  *
- * THE DIFFERENTIATOR LIVES HERE.
+ * This is the core of the project.
  *
  * A naive fan-out queues every sample for a slow consumer. Occupancy grows
  * without bound, the consumer drifts further behind real time with every tick,

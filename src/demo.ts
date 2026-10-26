@@ -36,9 +36,10 @@ console.log(`  ${CFG.feeders} feeders, ${CFG.ticks} ticks @ ${CFG.tickMs}ms, ` +
             `${FAULTS.length} injected faults with known onset`);
 console.log(`  Operator budget: ${budget}ms (detect while the fault is live)\n`);
 
+const ms = (v: number) => (Number.isFinite(v) ? v + 'ms' : 'never');
 const row = (label: string, r: typeof bounded) =>
   `  ${label.padEnd(26)} ${String(r.detected + '/' + FAULTS.length).padEnd(9)}` +
-  `${(r.medianMs + 'ms').padEnd(11)}${(r.p95Ms + 'ms').padEnd(11)}` +
+  `${ms(r.medianMs).padEnd(11)}${ms(r.p95Ms).padEnd(11)}` +
   `${String(r.maxOccupancy).padEnd(11)}${r.p95Ms < budget ? 'PASS' : 'MISSED'}`;
 
 console.log('  strategy                   detected  median     p95        peak queue  verdict');
